@@ -1,15 +1,5 @@
-import { useColorMode } from "@chakra-ui/react"
+import Profiler from "./profiler-ui"
 
-function App() {
-  const { toggleColorMode } = useColorMode()
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello Vite + React!</p>
-        <button onClick={toggleColorMode}>Toggle</button>
-      </header>
-    </div>
-  )
+export default function App() {
+  return <Profiler />
 }
-
-export default App
