@@ -11,8 +11,13 @@ import {
   VStack,
 } from "@chakra-ui/react"
 import { ColorModeToggle } from "./components/color-mode-toggle"
+import Profiler from "./profiler-ui"
 
-export default function Page() {
+export default function App() {
+  return <Profiler />
+}
+
+export function Page() {
   return (
     <Box textAlign="center" fontSize="xl" pt="30vh">
       <VStack gap="8">
@@ -47,7 +52,9 @@ export default function Page() {
 
         <HStack>
           <Button>Let's go!</Button>
-          <Button variant="outline">bun install @chakra-ui/react</Button>
+          <Button variant="solid" colorPalette="blue">
+            bun install @chakra-ui/react
+          </Button>
         </HStack>
       </VStack>
 
